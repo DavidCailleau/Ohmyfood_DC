@@ -1,0 +1,153 @@
+$bkg_primary: #579c87;
+$bkg_menu1: #fcdfdb;
+$bkg_menu2: #fff5fe;
+$bkg_menu3: #F9F9F9;
+$bkg_menu4: #FDFFFD;
+$font_primary: #fcca47;
+$font_menu1:#3E141A;
+
+a {
+  text-decoration: none;
+}
+
+.blocpage {
+  width: 100%;
+  height: 1600px;
+  margin: 0;
+  font-family: Montserrat, Comic Sans MS, serif;
+}
+
+.header {
+  height: 10%;
+  background-color: $bkg_primary;
+  text-align: center;
+  margin: 0 10% 0 10%;
+  font-size: 1.8rem;
+  color: $font_primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_menu {
+  width: 75%;
+  height:70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.section_menu1,
+.section_menu2,
+.section_menu3,
+.section_menu4 {
+  box-shadow: 0 0 1em #e2e2e2;
+  width: 40%;
+  height: 48%;
+  margin: 3em 3em 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.section_menu1 {
+  background-color: $bkg_menu1;
+  text-align: center;
+}
+
+.section_menu2 {
+  background-color: $bkg_menu2;
+  text-align: center;
+}
+
+.section_menu3 {
+  background-color: $bkg_menu3;
+  text-align: center;
+}
+.section_menu4 {
+  background-color: $bkg_menu4;
+  text-align: center;
+}
+
+.titre_resto1_index {
+  font-family: "Devonshire", Brush Script MT, cursive, serif;
+  color: $font_menu1;
+  font-size:1.8rem;
+}
+
+.animation_menu img{
+    width:30%;
+}
+
+.titre_menu1_index{
+    font-size: 2rem;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-family: segoe print;
+    color: $font_menu1;
+}
+
+
+.section_menu2 img{
+    width:70%;
+}
+
+.titre_menu2_index{
+    font-family: bell mt, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #D8852E;
+}
+
+.section_menu3 img{
+    width:70%;
+}
+
+.section_menu4 img{
+    width:70%;
+}
+
+.prochainement {
+  width: 25%;
+  height: 5%;
+  background-color: $bkg_primary;
+  color: $font_primary;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 8% auto;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, Comic Sans MS, serif;
+}
+.footer_lien {
+  width: 80%;
+  height:10%;
+  background-color: $bkg_primary;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 10% 0 10%;
+  font-size: 1.3rem;
+  color: $font_primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mention {
+  padding-left: 2rem;
+}
+
+.contact {
+  padding-right: 2rem;
+}
+.plat {
+  display: flex;
+  flex-direction: row;
+}
