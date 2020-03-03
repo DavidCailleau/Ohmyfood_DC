@@ -188,7 +188,11 @@ a {
 
 .restaurant_h2 {
   font-size: 2rem;
-  .recette {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+ .recette {
     margin-left: 4rem;
     margin-right: 1rem;
   }
@@ -197,10 +201,6 @@ a {
     margin-right: 4rem;
     font-weight: bold;
   }
-  margin-top: 3rem;
-  text-align: center;
-}
-
 .plat {
   display: flex;
   flex-direction: row;
