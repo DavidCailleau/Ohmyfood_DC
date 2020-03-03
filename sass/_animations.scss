@@ -1,0 +1,114 @@
+/*------------ EFFET ZOOM DES MENUS DE INDEX-------------- */
+
+@keyframes zoom_menu {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+.section_menu a:hover {
+  animation: zoom_menu 2s forwards;
+}
+
+/*------------ EFFET TREMBLEMENT FOOTER-------------- */
+
+@keyframes wiggle {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(-2px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(2px, -2px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-2px, -2px) rotate(1deg);
+  }
+
+  70% {
+    transform: translate(2px, 2px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-2px, 2px) rotate(0deg);
+  }
+
+  90% {
+    transform: translate(2px, -2px) rotate(1deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+.footer_lien a:hover {
+  color: white;
+  animation: wiggle 0.5s infinite;
+}
+
+/*----------- ANIMATION 3 POINTS DE PROCHAINEMENT ----------------*/
+
+.prochainement span {
+  margin: 0.1em;
+  font-weight: bold;
+  animation: points;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.prochainement span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+.prochainement span:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+@keyframes points {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*----------- SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
+
+.service h4:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width 0.7s ease;
+  -webkit-transition: width 0.7s ease;
+}
+
+.service h4:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
+}

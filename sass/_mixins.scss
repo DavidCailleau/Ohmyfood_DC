@@ -1,0 +1,19 @@
+@mixin style-section_menu_x {
+  box-shadow: 0 0 1em #e2e2e2;
+  width: 40%;
+  height: 45%;
+  margin: 1.5em 1.5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin style-carte_menu_x {
+  width: 60%;
+  margin: auto;
+  font-family: segoe print, comic sans ms, serif;
+  box-shadow: 0 0 1em #e2e2e2;
+}

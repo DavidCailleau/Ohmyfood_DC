@@ -1,0 +1,197 @@
+/* media queries */
+
+/********BREAKPOINTS********
+Haute résolution = 1280px
+Moyenne résolution = 1024px
+Petite résolution = 767px
+****************************/
+
+/* Format Tablette 10 pouces: réduction des marges,diminution de la police
+ et augmentation des cadres du menu */
+
+@media (max-width: 1280px) {
+  body {
+    width: auto;
+  }
+
+  .header {
+    margin: 0 5% 0 5%;
+    font-size: 1.6rem;
+  }
+
+  .section_menu {
+    width: 85%;
+    height: 75%;
+  }
+
+  .titre_menu1_index,
+  .titre_menu2_index,
+  .titre_menu3_index,
+  .titre_menu4_index {
+    font-size: 2rem;
+  }
+
+  .titre_resto2_index {
+    font-size: 1.5rem;
+  }
+
+  .titre_resto3_index {
+    font-size: 2.5rem;
+  }
+  .carte_menu1,
+  .carte_menu2,
+  .carte_menu3,
+  .carte_menu4 {
+    width: 70%;
+  }
+
+  .service h4 {
+    font-size: 1.4rem;
+  }
+
+  .carte_menu3 .service h4 {
+    font-size: 1.2rem;
+  }
+
+  .carte_menu4 .service h4 {
+    font-size: 1.2rem;
+  }
+
+  .recette {
+    font-size: 1rem;
+  }
+}
+
+/* Format Tablette classique: Suppression des marges du header et footer
+  et augmentation des cadres des menus sur toutes les pages. Diminution de l'image de la note.
+  Diminution de la police de "Prochainement" et augmentation du cadre */
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0;
+    width: 100%;
+  }
+  .section_menu {
+    height: 70%;
+    width: 100%;
+  }
+
+  .section_menu1 img {
+    width: 50%;
+  }
+
+  .section_menu1,
+  .section_menu2,
+  .section_menu3,
+  .section_menu4 {
+    width: 45%;
+    height: 45%;
+    margin: 1rem auto;
+  }
+
+  .carte_menu1,
+  .carte_menu2,
+  .carte_menu3,
+  .carte_menu4 {
+    width: 90%;
+  }
+
+  .prochainement {
+    font-size: 1.2rem;
+    width: 40%;
+  }
+
+  .footer_lien {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Format Smartphone: Transformation des cadres des menus sur la page index.
+     Diminution générale des polices, images et marges.
+     Diminution de la police de "Prochainement" et augmentation du cadre */
+
+@media (max-width: 767px) {
+  .section_menu1 img {
+    width: 25%;
+    padding-top: 2.5rem;
+  }
+
+  .section_menu1,
+  .section_menu2,
+  .section_menu3,
+  .section_menu4 {
+    width: 90%;
+    height: 22%;
+  }
+
+  .titre_resto2_index {
+    font-size: 1.4rem;
+  }
+  .restaurant_h2 {
+    font-size: 1.3rem;
+  }
+  .titre_resto1_carte,
+  .titre_resto2_carte,
+  .titre_resto3_carte,
+  .titre_resto4_carte {
+    font-size: 1.8rem;
+    margin: auto;
+    padding: auto;
+  }
+
+  .service {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+
+  .service img {
+    width: 15%;
+  }
+  .carte_menu1 .service h4,
+  .carte_menu2 .service h4,
+  .carte_menu3 .service h4,
+  .carte_menu4 .service h4 {
+    font-size: 0.9rem;
+  }
+
+  .recette {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .prix {
+    margin-right: 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .carte_menu2 .recette {
+    margin-left: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .carte_menu2 .prix {
+    margin-right: 0.8rem;
+  }
+
+  .resto1_end h3 {
+    font-size: 1.8rem;
+  }
+  .prochainement {
+    font-size: 1.1rem;
+    width: 60%;
+  }
+  .footer_lien {
+    font-size: 1.1rem;
+  }
+  .mention {
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .contact {
+    margin-left: 1rem;
+    text-align: center;
+  }
+}
