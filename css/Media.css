@@ -149,30 +149,38 @@ Petite résolution = 767px
     width: 15%;
   }
   .carte_menu1 .service h4,
-  .carte_menu2 .service h4,
   .carte_menu3 .service h4,
   .carte_menu4 .service h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
+  
   .recette {
     margin-left: 0.8rem;
     margin-right: 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   .prix {
     margin-right: 0.8rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
-
+  .carte_menu2 .service h4
+  {
+    font-size: 1.1rem;
+  }
   .carte_menu2 .recette {
     margin-left: 0.8rem;
     margin-right: 0.5rem;
+    font-size: 1.1rem;
   }
 
+  .carte_menu2 .service img {
+    width: 10%;
+  }
   .carte_menu2 .prix {
     margin-right: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .resto1_end h3 {

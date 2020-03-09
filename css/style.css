@@ -64,11 +64,9 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-
 .prochainement span:nth-child(2) {
   animation-delay: 0.7s;
 }
-
 .prochainement span:nth-child(3) {
   animation-delay: 1.4s;
 }
@@ -107,7 +105,7 @@ a {
   width: 100%;
   height: 1600px;
   margin: 0;
-  font-family: Montserrat, Comic Sans MS, serif;
+  font-family: "Montserrat", "Comic Sans MS", sans-serif;
 }
 
 /*--------------------HEADER-------------------------*/
@@ -155,7 +153,7 @@ a {
   width: 40%;
 }
 .section_menu1 .titre_resto1_index {
-  font-family: "Devonshire", cursive, serif;
+  font-family: "Devonshire", cursive;
   color: #3e141a;
   font-size: 2rem;
 }
@@ -208,7 +206,7 @@ a {
 
 .titre_resto2_index,
 .titre_resto2_carte {
-  font-family: "Croissant one", cursive, serif;
+  font-family: "Croissant one", cursive;
   font-size: 1.6rem;
   color: #d8852e;
   background: -webkit-linear-gradient(315deg, #d8852e, #6e4ccc);
@@ -219,7 +217,7 @@ a {
 
 .titre_resto3_index,
 .titre_resto3_carte {
-  font-family: "Cookie", cursive, serif;
+  font-family: "Cookie", cursive;
   font-size: 2.8rem;
   color: #0936e0;
   background: -webkit-linear-gradient(left, #0936e0, #399dfa);
@@ -233,7 +231,7 @@ a {
 
 .titre_resto4_index,
 .titre_resto4_carte {
-  font-family: "Kaushan script", cursive, serif;
+  font-family: "Kaushan script", cursive;
   font-size: 2.3rem;
   color: #3d9339;
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
@@ -249,7 +247,7 @@ a {
 .titre_menu3_index,
 .titre_menu4_index {
   font-weight: bold;
-  font-family: segoe print, serif;
+  font-family: "segoe print", sans-serif;
 }
 
 .titre_menu1_index {
@@ -259,7 +257,7 @@ a {
 }
 
 .titre_menu2_index {
-  font-family: bell mt, serif;
+  font-family: "bell mt", serif;
   font-size: 3rem;
   color: #d8852e;
 }
@@ -334,7 +332,7 @@ a {
 
 /*--------------PAGE MENU 1--------------*/
 .titre_resto1_carte {
-  font-family: "Devonshire", Brush Script MT, cursive, serif;
+  font-family: "Devonshire", cursive;
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -343,7 +341,7 @@ a {
 .carte_menu1 {
   width: 60%;
   margin: auto;
-  font-family: segoe print, comic sans ms, serif;
+  font-family: "segoe print", "Comic Sans MS", sans-serif;
   box-shadow: 0 0 1em #e2e2e2;
   background-color: #fcdfdb;
   color: #3e141a;
@@ -364,17 +362,17 @@ a {
 }
 .resto1_end h3 {
   font-size: 2.5rem;
-  font-family: "Devonshire", Brush Script MT, cursive, serif;
+  font-family: "Devonshire", cursive;
 }
 
 /*-------------PAGE MENU 2--------------*/
 .carte_menu2 {
   width: 60%;
   margin: auto;
-  font-family: segoe print, comic sans ms, serif;
+  font-family: "segoe print", "Comic Sans MS", sans-serif;
   box-shadow: 0 0 1em #e2e2e2;
   background-color: #fff5fe;
-  font-family: bell mt, comic sans ms, serif;
+  font-family: "bell mt", serif;
   font-size: 1.3rem;
 }
 .carte_menu2 .service {
@@ -422,7 +420,7 @@ a {
 .carte_menu3 {
   width: 60%;
   margin: auto;
-  font-family: segoe print, comic sans ms, serif;
+  font-family: "segoe print", "Comic Sans MS", sans-serif;
   box-shadow: 0 0 1em #e2e2e2;
   background-color: #f3f5f6;
   font-size: 1.2rem;
@@ -446,7 +444,7 @@ a {
 .carte_menu4 {
   width: 60%;
   margin: auto;
-  font-family: segoe print, comic sans ms, serif;
+  font-family: "segoe print", "Comic Sans MS", sans-serif;
   box-shadow: 0 0 1em #e2e2e2;
   background-color: #f7ffef;
   font-size: 1.2rem;
@@ -473,7 +471,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat, Comic Sans MS, serif;
+  font-family: "Montserrat", "Comic Sans MS", sans-serif;
 }
 
 /*---------------FOOTER-------------------*/
