@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/*------------ EFFET ZOOM DES MENUS DE INDEX-------------- */
+/*----------MIXIN DE STYLE (CADRE MENU DE L'INDEX ET CADRE MENU INDIVIDUEL)-------------*/
+/*----------MIXIN DES ANIMATIONS-------------*/
+/*------------ @zoom : EFFET ZOOM DES MENUS DE INDEX-------------- */
 @keyframes zoom_menu {
   0% {
     opacity: 1;
@@ -10,11 +12,7 @@
     transform: scale(1.2);
   }
 }
-.section_menu a:hover {
-  animation: zoom_menu 2s forwards;
-}
-
-/*------------ EFFET TREMBLEMENT FOOTER-------------- */
+/*------------ @tremblement : EFFET TREMBLEMENT FOOTER-------------- */
 @keyframes wiggle {
   0% {
     transform: translate(0px, 0px) rotate(0deg);
@@ -50,6 +48,19 @@
     transform: translate(0px, 0px) rotate(0deg);
   }
 }
+/*----------- @suspension : POINTS DE SUSPENSION ----------------*/
+@keyframes points {
+  50% {
+    opacity: 0;
+  }
+}
+/*----------- @soulignement : SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
+/*------------ EFFET ZOOM DES MENUS DE INDEX-------------- */
+.section_menu a:hover {
+  animation: zoom_menu 2s forwards;
+}
+
+/*------------ EFFET TREMBLEMENT FOOTER-------------- */
 .footer_lien a:hover {
   color: white;
   animation: wiggle 0.5s infinite;
@@ -71,11 +82,6 @@
   animation-delay: 1.4s;
 }
 
-@keyframes points {
-  50% {
-    opacity: 0;
-  }
-}
 /*----------- SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
 .service h4:after {
   content: "";
@@ -89,7 +95,6 @@
   transition: width 0.7s ease;
   -webkit-transition: width 0.7s ease;
 }
-
 .service h4:hover:after {
   width: 100%;
   left: 0;

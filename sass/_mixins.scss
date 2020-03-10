@@ -1,3 +1,5 @@
+/*----------MIXIN DE STYLE (CADRE MENU DE L'INDEX ET CADRE MENU INDIVIDUEL)-------------*/
+
 @mixin section_menu_x {
   box-shadow: 0 0 1em #e2e2e2;
   width: 40%;
@@ -18,7 +20,85 @@
   box-shadow: 0 0 1em #e2e2e2;
 }
 
+/*----------MIXIN DES ANIMATIONS-------------*/
 
+/*------------ @zoom : EFFET ZOOM DES MENUS DE INDEX-------------- */
+
+@keyframes zoom_menu {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+@mixin zoom {
+  animation: zoom_menu 2s forwards;
+}
+
+
+/*------------ @tremblement : EFFET TREMBLEMENT FOOTER-------------- */
+@keyframes wiggle {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(-2px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(2px, -2px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-2px, -2px) rotate(1deg);
+  }
+
+  70% {
+    transform: translate(2px, 2px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-2px, 2px) rotate(0deg);
+  }
+
+  90% {
+    transform: translate(2px, -2px) rotate(1deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@mixin tremblement{
+  animation: wiggle 0.5s infinite;
+}
+
+/*----------- @suspension : POINTS DE SUSPENSION ----------------*/
+
+@keyframes points {
+  50% {
+    opacity: 0;
+  }
+}
 
 @mixin pointsuspension{
   margin: 0.1em;
@@ -35,4 +115,26 @@
   &:nth-child(3){
     animation-delay: 1.4s;
   }
+}
+
+/*----------- @soulignement : SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
+
+@mixin soulignement{
+  &:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width 0.7s ease;
+  -webkit-transition: width 0.7s ease;
+}
+&:hover:after {
+  width: 100%;
+  left: 0;
+  background: black;
+}
 }
