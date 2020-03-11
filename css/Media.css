@@ -126,7 +126,7 @@ Petite résolution = 767px
   }
 
   .titre_resto2_index {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .restaurant_h2 {
     font-size: 1.3rem;
@@ -154,7 +154,6 @@ Petite résolution = 767px
     font-size: 1rem;
   }
 
-  
   .recette {
     margin-left: 0.8rem;
     margin-right: 0.5rem;
@@ -165,7 +164,7 @@ Petite résolution = 767px
     margin-right: 0.8rem;
     font-size: 0.9rem;
   }
-  
+
   .carte_menu2 .recette {
     margin-left: 0.8rem;
     margin-right: 0.5rem;
