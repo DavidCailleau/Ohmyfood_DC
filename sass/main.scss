@@ -29,6 +29,7 @@ a {
   h1 {
     color: $font_primary;
     text-decoration: none;
+    font-weight: normal;
   }
 }
 
@@ -347,6 +348,12 @@ a {
   align-items: center;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------MENTIONS-------------------*/
+
+.mention{
+  text-align: center;
 }
 
 /*---------------FOOTER-------------------*/

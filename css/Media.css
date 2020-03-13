@@ -6,7 +6,7 @@ Moyenne résolution = 1024px
 Petite résolution = 767px
 ****************************/
 
-/* Format Tablette 10 pouces: réduction des marges,diminution de la police
+/* Format 17 pouces LCD: réduction des marges,diminution de la police
  et augmentation des cadres du menu */
 
 @media (max-width: 1280px) {
@@ -19,6 +19,10 @@ Petite résolution = 767px
     font-size: 1.6rem;
   }
 
+  .footer_lien{
+    margin: 0 5% 0 5%;
+    width: 90%;
+  }
   .section_menu {
     width: 85%;
     height: 75%;
