@@ -16,7 +16,7 @@
 @mixin carte_menu_x {
   width: 60%;
   margin: auto;
-  font-family: 'segoe print', 'Kalam', sans-serif;
+  font-family: "segoe print", "Kalam", sans-serif;
   box-shadow: 0 0 1em #e2e2e2;
 }
 
@@ -39,7 +39,6 @@
 @mixin zoom {
   animation: zoom_menu 2s forwards;
 }
-
 
 /*------------ @tremblement : EFFET TREMBLEMENT FOOTER-------------- */
 @keyframes wiggle {
@@ -88,53 +87,55 @@
   }
 }
 
-@mixin tremblement{
+@mixin tremblement {
   animation: wiggle 0.5s infinite;
 }
 
 /*----------- @suspension : POINTS DE SUSPENSION ----------------*/
 
 @keyframes points {
-  50% {
+  0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
-@mixin pointsuspension{
+@mixin pointsuspension {
   margin: 0.1em;
   font-weight: bold;
   animation: points;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  
-  &:nth-child(2){
+
+  &:nth-child(2) {
     animation-delay: 0.7s;
   }
 
-  &:nth-child(3){
+  &:nth-child(3) {
     animation-delay: 1.4s;
   }
 }
 
 /*----------- @soulignement : SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
 
-@mixin soulignement{
+@mixin soulignement {
   &:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
-  background: black;
-  transition: width 0.7s ease;
-  -webkit-transition: width 0.7s ease;
-}
-&:hover:after {
-  width: 100%;
-  left: 0;
-  background: black;
-}
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width 0.7s ease;
+    -webkit-transition: width 0.7s ease;
+  }
+  &:hover:after {
+    width: 100%;
+    left: 0;
+  }
 }

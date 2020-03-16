@@ -1,24 +1,23 @@
 /*------------ EFFET ZOOM DES MENUS DE INDEX-------------- */
 
 .section_menu a:hover {
-  @include zoom
+  @include zoom;
 }
 
 /*------------ EFFET TREMBLEMENT FOOTER-------------- */
 
 .footer_lien a:hover {
   color: white;
-  @include tremblement
+  @include tremblement;
 }
 
 /*----------- ANIMATION 3 POINTS DE PROCHAINEMENT ----------------*/
 
-
 .prochainement span {
-@include pointsuspension
+  @include pointsuspension;
 }
 /*----------- SOULIGNEMENT DES SERVICES DE CHAQUE MENU ----------------*/
 
-.service h4{
+.service h4 {
   @include soulignement;
 }
