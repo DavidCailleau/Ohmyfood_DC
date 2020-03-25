@@ -1,114 +1,74 @@
 /* media queries */
 
 /********BREAKPOINTS********
-Haute résolution = 1280px
-Moyenne résolution = 1024px
-Petite résolution = 767px
+Format tablette = 1024px
+format smartphone = 767px
 ****************************/
 
-/* Format 17 pouces LCD: réduction des marges,diminution de la police
- et augmentation des cadres du menu */
 
-@media (max-width: 1280px) {
-  body {
-    width: auto;
-  }
 
-  .header {
-    margin: 0 5% 0 5%;
-    font-size: 1.6rem;
-  }
 
-  .footer_lien {
-    margin: 0 5% 0 5%;
-    width: 90%;
-  }
-  .section_menu {
-    width: 85%;
-    height: 75%;
-  }
-
-  .titre_menu1_index,
-  .titre_menu2_index,
-  .titre_menu3_index,
-  .titre_menu4_index {
-    font-size: 2rem;
-  }
-
-  .titre_resto2_index {
-    font-size: 1.5rem;
-  }
-
-  .titre_resto3_index {
-    font-size: 2.5rem;
-  }
-  .carte_menu1,
-  .carte_menu2,
-  .carte_menu3,
-  .carte_menu4 {
-    width: 70%;
-  }
-
-  .service h4 {
-    font-size: 1.4rem;
-  }
-
-  .carte_menu3 .service h4 {
-    font-size: 1.2rem;
-  }
-
-  .carte_menu4 .service h4 {
-    font-size: 1.2rem;
-  }
-
-  .recette {
-    font-size: 1rem;
-  }
-}
-
-/* Format Tablette classique: Suppression des marges du header et footer
-  et augmentation des cadres des menus sur toutes les pages. Diminution de l'image de la note.
-  Diminution de la police de "Prochainement" et augmentation du cadre */
+/* Format Tablette classique: Augmentation des cadres des menus sur toutes les pages. Diminution de l'image de la note.
+  Diminution de la police des titres et de "Prochainement". Augmentation du cadre de prochainement */
 
 @media (max-width: 1024px) {
-  .header {
-    margin: 0;
-    width: 100%;
-  }
-  .section_menu {
-    height: 70%;
-    width: 100%;
-  }
 
-  .section_menu1 img {
+
+  .index_section_menu_la-note-enchantee img {
     width: 50%;
   }
 
-  .section_menu1,
-  .section_menu2,
-  .section_menu3,
-  .section_menu4 {
+  .index_section_menu_la-note-enchantee,
+  .index_section_menu_le-chic-a-la-francaise,
+  .index_section_menu_le-delice-des-papilles,
+  .index_section_menu_la-palette-du-gout {
     width: 45%;
     height: 45%;
     margin: 1rem auto;
   }
 
-  .carte_menu1,
-  .carte_menu2,
-  .carte_menu3,
-  .carte_menu4 {
+  .carte_menu_la-note-enchantee,
+  .carte_menu_le-chic-a-la-francaise,
+  .carte_menu_le-delice-des-papilles,
+  .carte_menu_la-palette-du-gout {
     width: 90%;
   }
+
+  .titre_menu_la-note-enchantee_index,
+  .titre_menu_le-chic-a-la-francaise_index,
+  .titre_menu_le-delice-des-papilles_index,
+  .titre_menu_la-palette-du-gout_index {
+    font-size: 2rem;
+  }
+
+  .titre_resto_le-chic-a-la-francaise_index {
+    font-size: 1.5rem;
+  }
+
+  .titre_resto_le-delice-des-papilles_index {
+    font-size: 2.5rem;
+  }
+
+
+  .service h3 {
+    font-size: 1.4rem;
+  }
+
+  .carte_menu_le-delice-des-papilles .service h3 {
+    font-size: 1.2rem;
+  }
+
+  .carte_menu_la-palette-du-gout .service h3 {
+    font-size: 1.2rem;
+  }
+
 
   .prochainement {
     font-size: 1.2rem;
     width: 40%;
   }
 
-  .footer_lien {
-    margin: 0;
-    width: 100%;
-  }
+
 }
 
 /* Format Smartphone: Transformation des cadres des menus sur la page index.
@@ -116,29 +76,29 @@ Petite résolution = 767px
      Diminution de la police de "Prochainement" et augmentation du cadre */
 
 @media (max-width: 767px) {
-  .section_menu1 img {
+  .index_section_menu_la-note-enchantee img {
     width: 25%;
     padding-top: 2.5rem;
   }
 
-  .section_menu1,
-  .section_menu2,
-  .section_menu3,
-  .section_menu4 {
+  .index_section_menu_la-note-enchantee,
+  .index_section_menu_le-chic-a-la-francaise,
+  .index_section_menu_le-delice-des-papilles,
+  .index_section_menu_la-palette-du-gout{
     width: 90%;
     height: 22%;
   }
 
-  .titre_resto2_index {
+  .titre_resto_le-chic-a-la-francaise_index {
     font-size: 1.2rem;
   }
-  .restaurant_h2 {
+  .restaurant_h1 {
     font-size: 1.3rem;
   }
-  .titre_resto1_carte,
-  .titre_resto2_carte,
-  .titre_resto3_carte,
-  .titre_resto4_carte {
+  .titre_resto_la-note-enchantee_carte,
+  .titre_resto_le-chic-a-la-francaise_carte,
+  .titre_resto_le-delice-des-papilles_carte,
+  .titre_resto_la-palette-du-gout_carte {
     font-size: 1.8rem;
     margin: auto;
   }
@@ -151,10 +111,10 @@ Petite résolution = 767px
   .service img {
     width: 15%;
   }
-  .carte_menu1 .service h4,
-  .carte_menu2 .service h4,
-  .carte_menu3 .service h4,
-  .carte_menu4 .service h4 {
+  .carte_menu_la-note-enchantee .service h3,
+  .carte_menu_le-chic-a-la-francaise .service h3,
+  .carte_menu_le-delice-des-papilles .service h3,
+  .carte_menu_la-palette-du-gout .service h3 {
     font-size: 1rem;
   }
 
@@ -169,21 +129,21 @@ Petite résolution = 767px
     font-size: 0.9rem;
   }
 
-  .carte_menu2 .recette {
+  .carte_menu_le-chic-a-la-francaise .recette {
     margin-left: 0.8rem;
     margin-right: 0.5rem;
     font-size: 1rem;
   }
 
-  .carte_menu2 .service img {
+  .carte_menu_le-chic-a-la-francaise .service img {
     width: 10%;
   }
-  .carte_menu2 .prix {
+  .carte_menu_le-chic-a-la-francaise .prix {
     margin-right: 0.8rem;
     font-size: 1.1rem;
   }
 
-  .resto1_end h3 {
+  .resto_la-note-enchantee_end h2 {
     font-size: 1.8rem;
   }
   .prochainement {
